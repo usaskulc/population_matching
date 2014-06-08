@@ -256,9 +256,9 @@ if __name__ == "__main__":
                 difference = diff(x[1][column_name], y[1][column_name], column_name)
                 #todo: right now if a value is missing we maximize it, setting it to totally different at 1, is this reasonable?
                 #todo: instead should we just ignore this?  or should it be a sort of special value?
-                if np.isnan(difference):
+                if difference != None and np.isnan(difference):
                     difference = 1
-                if difference != None:
+                elif difference != None:
                     diffs.append(difference * column_weights[column_name])
             matrix[x_i][y_i] = np.sum(diffs)
             y_i += 1
