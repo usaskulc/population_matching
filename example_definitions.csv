@@ -1,0 +1,2 @@
+Student Number,Sex,Ethnicity,Citizenship,Entrance Score,Credits Taken,College,Study Group,Lives on Campus,Frequent Helper
+ignore,nominal,nominal,nominal,real,real,nominal,nominal,nominal,nominal
